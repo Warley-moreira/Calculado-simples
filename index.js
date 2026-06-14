@@ -12,7 +12,12 @@ function voltar() {
 }
 
 function resultado() {
+    const display = document.querySelector('.display');
 
-    let visor = document.querySelector('.display');
-    visor.value = eval(visor.value);
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = 'erro!'
+    }
+
 }
