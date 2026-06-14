@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto-Calculadora</title>
+</head>
+
+<body>
+    <section class="calculador-container">
+        <input class="display" type="text" placeholder="0" disabled>
+        <div class="calculadora-btn">
+            <button onclick="limpar()" class="btn-limpar">C</button>
+            <button onclick="voltar()">&lt;</button>
+            <button onclick="adiconarNoDisplay('/')">/</button>
+            <button onclick="adiconarNoDisplay('*')">*</button>
+            <button onclick="adiconarNoDisplay('7')">7</button>
+            <button onclick="adiconarNoDisplay('8')">8</button>
+            <button onclick="adiconarNoDisplay('9')">9</button>
+            <button onclick="adiconarNoDisplay('+')">+</button>
+            <button onclick="adiconarNoDisplay('4')">4</button>
+            <button onclick="adiconarNoDisplay('5')">5</button>
+            <button onclick="adiconarNoDisplay('6')">6</button>
+            <button onclick="adiconarNoDisplay('-')">-</button>
+            <button onclick="adiconarNoDisplay('1')">1</button>
+            <button onclick="adiconarNoDisplay('2')">2</button>
+            <button onclick="adiconarNoDisplay('3')">3</button>
+            <button onclick="resultado()" class="btn-igual">=</button>
+            <button onclick="adiconarNoDisplay('0')" class="numero-zero">0</button>
+            <button onclick="adiconarNoDisplay('.')">.</button>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+:root {
+    --cor-primaria: #1A1A2E;
+    --cor-do-botao: #3FA66B;
+    --cor-do-botao-igual-limpar: #E76F51;
+    --cor-da-bordas: #ccc;
+}
+
+body {
+    background-color: #1A1A2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculador-container {
+    background: #22223B;
+    box-shadow: 3px 4px 0px 0px #08bd46;
+    border: 2px solid #ccc;
+    padding: 16px;
+    border-radius: 6px;
+    width: 320px;
+}
+
+.display {
+    background-color: #1A1A2E;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+.calculadora-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: 100%;
+    margin-top: 12px;
+}
+
+button {
+    background: #3FA66B;
+    color: #E5E7EB;
+    width: 100%;
+    height: 55px;
+    border-radius: 6px;
+    border: none;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.btn-igual {
+    background: #E76F51;
+    grid-row: span 2;
+    grid-column: 4;
+    height: 100%;
+}
+
+.btn-limpar {
+    background: #E76F51;
+}
+
+.numero-zero {
+    grid-column: 1/3;
+}
